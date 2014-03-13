@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-__version__ = '0.5'
+__version__ = '0.5.1'
 ASCII = 1
 DIGIT = 2
 KANA  = 4
