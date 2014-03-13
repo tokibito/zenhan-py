@@ -65,10 +65,10 @@ class _Converter(object):
 
 import sys
 
-if sys.version_info.major == 3:
+if sys.version_info[0] == 3:
     from . import converter3
     converter = converter3.Converter()
-elif sys.version_info.major == 2:
+elif sys.version_info[0] == 2:
     from . import converter2
     converter = converter2.Converter()
 else:
