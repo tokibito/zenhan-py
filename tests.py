@@ -94,7 +94,8 @@ class TestZenhan(unittest.TestCase):
         converted = zenhan.z2h(self.original, zenhan.KANA)
 
         if sys.version_info >= (3, 0):
-            self.assertEqual(converted, "ﾟabcＤＥﾞＦ123４５６ｱｶﾞｻﾀﾞﾅﾊﾞﾋﾞﾌﾟﾍﾟﾟ")        else:
+            self.assertEqual(converted, "ﾟabcＤＥﾞＦ123４５６ｱｶﾞｻﾀﾞﾅﾊﾞﾋﾞﾌﾟﾍﾟﾟ")
+        else:
             self.assertEqual(converted, u"ﾟabcＤＥﾞＦ123４５６ｱｶﾞｻﾀﾞﾅﾊﾞﾋﾞﾌﾟﾍﾟﾟ")
 
     def test_z2h_ascii_and_digit(self):
