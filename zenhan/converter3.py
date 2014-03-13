@@ -93,7 +93,7 @@ class Converter(_Converter):
             else:
                 converted.append(zh_dict.get(c, c))
 
-        return u''.join(converted)
+        return ''.join(converted)
 
     def han2zen(self, text, mode, ignore):
         if isinstance(text, str) or text == '':
@@ -118,4 +118,4 @@ class Converter(_Converter):
                 converted.append(hz_dict.get(c, c))
             prev = c
 
-        return u''.join(converted)
+        return ''.join(converted)
